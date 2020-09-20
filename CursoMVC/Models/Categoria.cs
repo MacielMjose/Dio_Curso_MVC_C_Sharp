@@ -10,6 +10,7 @@ namespace CursoMVC.Models
     {
         public int Id { get; set; }
         [Display(Name = "Descrição")] 
+        [Required(ErrorMessage = "O campo Descricao é Obrigatório")]
         public string Descricao { get; set;  }
 
     }
