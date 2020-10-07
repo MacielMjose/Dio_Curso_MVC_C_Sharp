@@ -8,8 +8,9 @@ namespace CursoMVC.Models
 {
     public class Context : DbContext
     {
-        public DbSet<Categoria> categorias { get; set; }
-        public DbSet<Produto> produtos{ get; set; }
+        //remove virtual keyword after testing
+        public virtual DbSet<Categoria> categorias { get; set; }
+        public virtual DbSet<Produto> produtos{ get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsbuilder)
         {
